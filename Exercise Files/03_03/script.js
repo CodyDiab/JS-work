@@ -6,3 +6,8 @@ var justAnotherVariable;
 
 // Try this in your console:
 // console.log(typeof insertVariableName);
+var a = 1;
+console.log(a)
+console.log(++a)
+
+console.log(a)
