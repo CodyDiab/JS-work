@@ -26,3 +26,11 @@ function Course(title, instructor, level,published,views) {
     }
 
 }
+
+//dot notation
+
+//Object.property
+
+//bracket notation
+
+//Object["property"]
