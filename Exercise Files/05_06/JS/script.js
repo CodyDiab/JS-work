@@ -13,4 +13,9 @@ console.log(captionElement)
 
 FEATURED.appendChild(captionElement);
 
-THEIMAGE.setAttribute("alt","")
+THEIMAGE.setAttribute("alt","");
+
+///append method
+
+// captionElement.append(altText);
+// FEATURED.append(captionElement);
