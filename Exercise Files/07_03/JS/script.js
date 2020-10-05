@@ -1,12 +1,13 @@
 
 const CTA = document.querySelector(".cta a");
 const ALERT = document.querySelector("#booking-alert");
-
+var count = 0
 CTA.classList.remove("hide");
 ALERT.classList.add("hide");
 
 function reveal(e) {
     e.preventDefault();
+    count++ 
     CTA.classList.toggle("hide");
     ALERT.classList.toggle("hide");
 
@@ -14,3 +15,4 @@ function reveal(e) {
 
 
 CTA.addEventListener("click", reveal, false);
+CTA.addEventListener("click",function(){ console.log(`the button was clicked ${count} times`)},false)
