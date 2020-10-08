@@ -6,3 +6,6 @@ while ( i<567) {
     console.log(reps + "reps gives us " + i);
     i*= 2.1;
 }
+
+/// do while loop - look it up
+
