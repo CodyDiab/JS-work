@@ -71,6 +71,7 @@ console.log("Before: ", pens);
 // var arrayString = pens.join(separator);
 // console.log("String from array: ", arrayString);
 
-// join array with array.flat() takes levels as argument
+// join array with array.flat() takes levels as 
+
 // MDN documentation for Array:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array

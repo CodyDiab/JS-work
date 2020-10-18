@@ -1,0 +1,16 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.square{
+  background-color: rgb(158, 113, 201);
+  width: 100vh;
+}
+
+h1{
+  color: bisque;
+  line-height: 1.5;
+}
