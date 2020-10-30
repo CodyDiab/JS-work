@@ -10,32 +10,30 @@ let bookList = [
   
 
 ]
-const Book = ({title,author,pages}) => {
+const Book = ({title,author,pages,freeBookmark}) => {
   return(
     <section>
        <h2>{title}</h2>
        <p>by: {author}</p>
        <p>Pages: {pages} pages</p>
+       <p>Free Book Today: {freeBookmark ? 'yes' : 'no!'}</p>
     </section>
   )
 }
 
 class Library extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      open: true
-    }
-      this.toggleOpenClosed = this.toggleOpenClosed.bind(this)
-    }
-    toggleOpenClosed() {
+  state = {
+    open:true,
+  freeBookmark: true}
+
+    toggleOpenClosed = () =>  {
       this.setState( previousState =>({
         open: !previousState.open
       }))
     }
   
   render() {
-        console.log(this.state)
+       
         const {books} = this.props
       return(
       <div>
@@ -47,10 +45,11 @@ class Library extends React.Component {
         key={i}
         title={book.title}
           author={book.author}
-          pages={book.pages}/>
-   )}
-  </div>)
-}
+          pages={book.pages}
+          freeBookmark={this.state.freeBookmark}/>
+       )}
+  </div>
+      )}
 }
 render(
   <>
