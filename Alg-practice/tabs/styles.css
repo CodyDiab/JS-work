@@ -1,3 +1,26 @@
 .nav{
     width:100%;
+    background-color: cadetblue;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button{
+    color: white;
+    background-color: cadetblue;
+    border:none
+}
+.field{
+    width:80%;
+    height:auto;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#display1{
+    display:block;
+}
+#display3,#display2{
+    display:none;
 }
