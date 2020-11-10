@@ -75,3 +75,28 @@ console.log("Before: ", pens);
 
 // MDN documentation for Array:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+function funWithAnagrams(text) {
+    // Write your code here
+ let drop = [];
+ 
+ for(let word of text) {
+     for (let i = 0; i< text.length; i++) {
+         if(word != text[i] && !drop.includes(word)) {
+             if (comp(word,text[i])) {
+                 drop.push(text[i])
+             }
+         }
+     }
+ }
+  return text.filter(n=> !drop.includes(n)).sort();
+}
+function comp(word, wordToComp) {
+    if(word.length != wordToComp.length) {
+        return false;
+    }
+    const arrWord = word.split('').sort();
+    const arrWordToComp = wordToComp.split('').sort();
+    
+    return arrWord.toString() === arrWordToComp.toString();
+}
