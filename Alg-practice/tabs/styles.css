@@ -15,10 +15,7 @@ button{
     border:none;
     font-size: larger;
 }
-button:hover{
-    background-color:white;
-    color:black;
-}
+
 .field{
     width:80%;
     height:300px;
