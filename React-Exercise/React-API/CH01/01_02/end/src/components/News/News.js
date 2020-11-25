@@ -2,15 +2,15 @@ import React, {Component} from 'react';
 import NewSingle from './NewSingle';
 
 class News extends Component {
-constructor(props){
-    super(props);
-    this.state = {
-        news:[],
-    };
-}
+    constructor(props){
+        super(props);
+        this.state = {
+            news: [],
+        };
+    }
 
 componentDidMount(){
-    const url = "http://newsapi.org/v2/everything?q=bitcoin&from=2020-10-24&sortBy=publishedAt&apiKey=0971b0705e864f828690bc27831d3770";
+    const url = "http://newsapi.org/v2/everything?q=bitcoin&from=2020-10-25&sortBy=publishedAt&apiKey=0971b0705e864f828690bc27831d3770";
 
     fetch(url)
      .then((response)=> {
