@@ -10,7 +10,7 @@ class News extends Component {
     }
 
 componentDidMount(){
-    const url = "http://newsapi.org/v2/everything?q=bitcoin&from=2020-10-27&sortBy=publishedAt&apiKey=0971b0705e864f828690bc27831d3770";
+    const url = "http://newsapi.org/v2/everything?q=bitcoin&from=2020-10-29&sortBy=publishedAt&apiKey=0971b0705e864f828690bc27831d3770";
 
     fetch(url)
      .then((response)=> {
