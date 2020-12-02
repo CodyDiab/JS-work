@@ -8,14 +8,19 @@
 }
 
 .App-header {
-  background-color: rgba(34, 34, 34, 0.672);
+  background-color: gold;
+  border-color:black;
+  border:solid;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
   height: 150px;
   padding: 20px;
   color: rgb(228, 225, 225);
+  text-shadow: 2px 2px #434040;
 }
 
 .App-title {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .App-intro {
