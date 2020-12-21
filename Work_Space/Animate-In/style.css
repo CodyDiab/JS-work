@@ -9,7 +9,7 @@
 #animate{
     position: absolute;
     overflow-y: hidden;
-  animation-duration:2s;
+  animation-duration: 2s;
   animation-name:slidein ;
 }
 @keyframes slidein{
