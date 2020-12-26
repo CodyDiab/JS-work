@@ -23,3 +23,20 @@ function birthdayCakeCandles(candles) {
     return(count)
 
 }
+
+function designerPdfViewer(h, word) {
+  
+    let letters = "abcdefghijklmnopqrstuvwxyz";
+    let letterHeight = [];
+    
+    //push the hight value for each elemnt of word by comparing the letter to its index in letters
+    for (let i = 0; i < word.length; i++){
+      letterHeight.push(h[letters.indexOf(word[i])]);
+    }
+    
+    //sort letterHeight array and get lest index (hieghest value)
+    let tallest = letterHeight.sort()[letterHeight.length-1];
+    
+    return tallest * word.length;
+    
+  }
