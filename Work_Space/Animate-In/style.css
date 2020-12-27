@@ -11,6 +11,7 @@
     overflow-y: hidden;
   animation-duration: 2s;
   animation-name:slidein ;
+  
 }
 @keyframes slidein{
     from{
