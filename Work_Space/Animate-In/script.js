@@ -35,3 +35,22 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+var logo = document.getElementById("logo")
+
+document.querySelector("#logo").addEventListener("mouseover", function (event){ event.preventDefault; expand()});
+document.querySelector("#logo").addEventListener("mouseout", function (event){ event.preventDefault; revert()});
+
+console.log(logo.style.width)
+function expand(){
+   
+    console.log("hover on")
+    document.querySelector("#logo").style.width="64px";
+    document.querySelector("#logo").style.height="64px";
+}
+function revert(){
+    console.log("hover off")
+    document.querySelector("#logo").style.width="32px";
+    document.querySelector("#logo").style.height="32px";
+}
+
