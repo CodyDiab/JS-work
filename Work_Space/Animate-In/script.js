@@ -38,19 +38,28 @@ window.onclick = function(event) {
 
 var logo = document.getElementById("logo")
 
-document.querySelector("#logo").addEventListener("mouseover", function (event){ event.preventDefault; expand()});
-document.querySelector("#logo").addEventListener("mouseout", function (event){ event.preventDefault; revert()});
+document.querySelector("#logo").addEventListener("mouseover", function (event){ event.preventDefault; expand(logo)});
+document.querySelector("#logo").addEventListener("mouseout", function (event){ event.preventDefault; revert(logo)});
 
 console.log(logo.style.width)
-function expand(){
+function expand(node){
    
     console.log("hover on")
-    document.querySelector("#logo").style.width="64px";
-    document.querySelector("#logo").style.height="64px";
+   node.style.width="64px";
+    node.style.height="64px";
 }
-function revert(){
+function revert(node){
     console.log("hover off")
-    document.querySelector("#logo").style.width="32px";
-    document.querySelector("#logo").style.height="32px";
+   node.style.width="32px";
+    node.style.height="32px";
 }
+// document.getElementById("logo").addEventListener("mouseover", mouseOver);
+// document.getElementById("logo").addEventListener("mouseout", mouseOut);
 
+// function mouseOver() {
+//   document.getElementById("logo").style.color = "red";
+// }
+
+// function mouseOut() {
+//   document.getElementById("logo").style.color = "black";
+// }
