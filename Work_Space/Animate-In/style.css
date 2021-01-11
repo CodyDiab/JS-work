@@ -103,7 +103,7 @@ ol li::before {
   font-weight: bold;
   position: absolute;
   --size: 32px;
-  left: calc(-1 * var(--size) - 10px);
+  left: calc(-1 * var(--size) - 20px);
   line-height: var(--size);
   width: var(--size);
   height: var(--size);
